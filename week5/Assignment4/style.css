@@ -1,0 +1,17 @@
+a {
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 50px;
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: #74c69d;
+    width: fit-content;
+    height: 70px;
+    padding: 20px 50px;
+    color: white;
+    border-bottom: 20px solid #2d6a4f;
+}
