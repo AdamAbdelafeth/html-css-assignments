@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+div {
+    display: inline-block;
+    border-width: 5px;
+    background-color: #EEE;
+    outline: 5px solid black;
+    margin: 10px;
+    padding: 10px;
+    font-size: small;
+}
+.first-shape {
+    border: 5px solid red;
+}
+.second-shape {
+    border-width: 5px ;
+    border-color: blue green;
+    border-style: solid;
+}
+.third-shape {
+    border-width: 5px;
+    border-style: dashed;
+    border-color: red green blue  yellow;
+}  
