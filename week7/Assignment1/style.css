@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+.parent {
+    width: 800px;
+    background-color: #EEE;
+    padding: 0px;
+    text-align: center;
+    
+}
+.parent div {
+    padding: 10px 0px;
+    float: left;
+    margin: 15px 0px 15px 15px;
+    background-color: #DDD;
+}
+.full-width {
+    width: calc(100% - 2*15px);
+}
+.three {
+    width: calc(((100%) - (15px * 4))/3);
+}
+
+.two {
+    width: calc(((100%) - (15px * 3))/2);
+}
+
+.four {
+    width: calc((100% - 15px *5)/4);
+}
+.clear {
+    display: block;
+    clear: both;
+}
