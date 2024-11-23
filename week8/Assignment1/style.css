@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+div {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+.green {
+    background-color: lightgreen;
+    z-index: 2;
+    top: 30px;
+    left: 30px;
+}
+.red {
+    background-color: lightcoral;
+    z-index: 3;
+    top: 40px;
+    left: 40px;
+}
+.blue {
+    background-color: lightskyblue;
+    z-index: 1;
+    top: 20px;
+    left: 20px;
+}
+.black {
+    background-color: lightslategrey;
+    top: 30px;
+    left: 20px;
+}
