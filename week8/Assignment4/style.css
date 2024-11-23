@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 700px;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 3px solid #2ba89c;
+}
+table thead {
+    font-weight: bold;
+    background-color: #404040;
+
+}
+.container tr th {
+    background-color: #353535;
+    color: white;
+    padding: 10px;
+}
+.container tr td {
+    background-color: #eee;
+    padding: 30px;
+    position: relative;
+}
+caption {
+    font-weight: bold;
+    padding: 10px;
+}
+img {
+    width: 80px;
+}
+a {
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: white;
+    display: block;
+    justify-self: center;
+    margin: 10px;
+    
+}
+.view {
+    background-color: lightskyblue;
+    margin-left: 16px;
+}
+.delete {
+    background-color: red;
+}
