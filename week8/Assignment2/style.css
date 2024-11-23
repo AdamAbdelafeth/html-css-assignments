@@ -17,6 +17,7 @@ span {
     background-color: lightskyblue;
     padding: 5px 10px;
     position: relative;
+    color: white;
 }
 .top-left {
     top: -99px;
