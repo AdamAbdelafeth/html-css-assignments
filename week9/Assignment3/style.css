@@ -1,0 +1,28 @@
+p {
+    width: 370px;
+    margin: 30px auto;
+    background-color: #ccc;
+    padding: 20px;
+    border-left: 5px solid lightseagreen;
+    position: relative;
+    
+}
+p::after{
+    content: "";
+    border: 20px solid lightseagreen;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    position: absolute;
+    left: -40px;
+    top: 9px;
+}
+p::before {
+    content: attr(data-person);
+    position: absolute;
+    top: 4px;
+    left: -108px;
+    background-color: inherit;
+    padding: 15px;
+    text-align: center;
+}
