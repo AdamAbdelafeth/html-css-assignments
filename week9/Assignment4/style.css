@@ -1,0 +1,19 @@
+p {
+    width: 400px;
+    margin: 10px auto;
+    background: #ccc;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-right: 5px solid lightskyblue;
+    counter-increment: count;
+    position: relative;
+}
+p::after {
+    content: counter(count);
+    position: absolute;
+    top: 0;
+    left: -35px;
+    padding: inherit;
+    background-color: lightcoral;
+}
