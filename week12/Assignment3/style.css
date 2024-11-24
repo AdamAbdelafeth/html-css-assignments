@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+.parent {
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #EEE;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    padding: 10px 0;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.parent div {
+    width: 180px;
+    height: 40px;
+    background-color: lightslategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+.one {
+    order: 6;
+    margin-top: 100px;
+}
+.two {
+    align-self: flex-end;
+    order: 4;
+    flex: 140px;
+}
+.three {
+    order: 3;
+    flex: 40px;
+    margin-bottom: 40px;
+}
+.four {
+    order: 5;
+    flex: 140px;
+}
+
+.five {
+    order: 2;
+    flex: 150px;
+}
+
+.six {
+    order: 1;
+    flex: 100px;
+}
