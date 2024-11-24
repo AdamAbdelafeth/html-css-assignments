@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.parent {
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    background-color: #EEE;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+}
+.parent div {
+    width: 180px;
+    height: 40px;
+    background-color: #e63946;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    
+}
