@@ -1,0 +1,39 @@
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    display: grid;
+    grid-template-rows:  10% 85%;
+    grid-template-columns:  auto auto auto;
+    gap: 20px;
+}
+.grid div {
+    background-color: #577590;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid div:last-child::before {
+    content: 'Element 6';
+}
+.grid div:nth-child(1)::before {
+    content: 'Element 1';
+}
+.grid div:nth-child(2)::before {
+    content: 'Element 2';
+}
+.grid div:nth-child(3)::before {
+    content: 'Element 3';
+}
+.grid div:nth-child(4)::before {
+    content: 'Element 4';
+}
+.grid div:nth-child(5)::before {
+    content: 'Element 5';
+}
