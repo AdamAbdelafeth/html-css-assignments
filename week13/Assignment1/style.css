@@ -10,6 +10,7 @@ div {
     position: relative;
     border-right: 10px solid #8338ec;
     border-left: 10px solid #f77f00;
+    letter-spacing: 10px;
 }
 div::first-letter {
     color: red;
