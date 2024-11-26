@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+    width: 100%;
+    background-color: #a4c3b2;
+    display: grid;
+    gap: 10px;
+    padding: 50px;
+    grid-template-areas:'item1 item1 item1 item1 item2 item2 item3 item3'
+                        'item4 item4 item5 item5 item5 item5 item3 item3'
+                        'item4 item4 item6 item6 item6 item6 item3 item3'
+                        'item7 item7 item8 item8 item9 item9 item10 item10';
+    
+}
+span,
+p {
+    padding: 10px;
+}
+h2 {
+    padding: 10px 10px 0px 10px;
+}
+span {
+    opacity: 0.5;
+    
+    
+    
+}
+p:first-of-type{
+    font-weight: bold;
+    margin-top: 30px;
+}
+p:last-of-type {
+    margin-top: 30px;
+
+}
+.container .item {
+    background-color: #FFF;
+    border-radius: 10px;
+    border-bottom: 10px solid #0fa3b1;
+    position: relative;
+    
+}
+.container .item::after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    padding: 10px;
+    bottom: 0px;
+    right: 10px;
+    animation-duration: 5s;
+    animation-name: fluid-anim;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    border-radius: 39% 61% 55% 45% / 44% 37% 63% 56%;
+    
+}
+/* @keyframes span {
+    0% {
+        border-color: transparent #ff5d8f;
+    }
+    50% {
+        border-color: #ff5d8f transparent;
+    }
+    100% {
+        border-color: transparent #ff5d8f;
+    }
+} */
+@keyframes span {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes fluid-anim {
+    0% {
+        border-radius: 39% 61% 55% 45% / 44% 37% 63% 56%;
+    }
+
+    25% {
+        border-radius: 45% 55% 48% 52% / 60% 36% 64% 40%;
+    }
+
+    50% {
+        border-radius: 56% 44% 28% 72% / 46% 63% 37% 54%;
+    }
+
+    75% {
+        border-radius: 62% 38% 37% 63% / 39% 32% 68% 61%;
+    }
+
+    100% {
+        border-radius: 39% 61% 55% 45% / 44% 37% 63% 56%;
+    }
+}
+.item1 {
+    grid-area: item1;
+}
+.item2 {
+    grid-area: item2;
+}
+.item3 {
+    grid-area: item3;
+    color: #FFF;
+    background-color: #333 !important;
+}
+.item4 {
+    grid-area: item4;
+}
+.item5 {
+    grid-area: item5;
+    background-color: #333 !important;
+    color: #FFF;
+}
+.item6 {
+    grid-area: item6;
+}
+.item7 {
+    grid-area: item7;
+}
+.item8 {
+    grid-area: item8;
+    background-color: #333 !important;
+    color: #FFF;
+}
+.item9 {
+    grid-area: item9;
+}
+.item10 {
+    grid-area: item10;
+}
