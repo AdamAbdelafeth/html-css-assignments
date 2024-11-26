@@ -1,0 +1,30 @@
+div {
+    margin: auto;
+    width: 600px;
+    position: relative;
+    
+}
+input {
+    width: 95%;
+    background-color: #EEE;
+    margin: 15px 0px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    caret-color: #da2c38;
+    letter-spacing: 1px;
+}
+div::before{
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(
+        to right, 
+        #da2c38 50%, 
+        #62b6cb 50%,
+        #62b6cb
+        );
+    width: 100%;
+    height: 3px;
+    bottom: 15px;
+    left: 0px;
+}
