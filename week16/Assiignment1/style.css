@@ -1,0 +1,34 @@
+:root {
+    --mainColor: #fb8500;
+    --textColor: #FFF;
+}
+h1 {
+    width: 150px;
+    margin: 50px auto;
+    
+    background-color: var(--mainColor);
+    color: var(--textColor);
+    text-align: center;
+    line-height: 100px;
+    position: relative;
+}
+h1::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--mainColor);
+    position: absolute;
+    display: block;
+    z-index: -1;
+    transform: skew(10deg, 10deg);
+}
+h1::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--mainColor);
+    position: absolute;
+    z-index: -1;
+    transform: skew(-10deg, -10deg);
+    left: 0px;
+}
