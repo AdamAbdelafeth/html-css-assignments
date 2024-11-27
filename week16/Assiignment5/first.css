@@ -1,0 +1,43 @@
+body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+div {
+    width: 200px;
+    height: 200px;
+    background-color: #333;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 40px;
+    position: relative;
+    margin: auto;
+    transform-style: preserve-3d;
+    transition: transform 2s;
+}
+div:hover {
+    transform: rotateY(-180deg);
+}
+div::before {
+    content: 'Back';
+    width: 100%;
+    height: 100%;
+    background-color: lightskyblue;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+}
+div::after {
+    content: 'Front';
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+}
