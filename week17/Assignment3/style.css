@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
+span {
+    width: 50px;
+    height: 50px;
+    background-color: #eee;
+    margin: auto;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #333;
+    border-left-color: transparent;
+    animation: span 1s linear infinite;
+}
+@keyframes span {
+    100% {
+        transform: rotate(360deg);
+    }
+}
