@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+.main {
+    width: 850px;
+    height: 900px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+    padding: 10px;
+    padding: 20px 10px;
+    border-radius: 20px;
+}
+.main div {
+    
+    border-radius: 20px;
+    
+}
+.one {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image: url('/week21-all-lessons/Assignment22/11.jpg');
+    background-size: cover;
+    background-position: -88px;
+}
+.two {
+    background-image: url('/2.png');
+    background-size: cover;
+    background-position: -124px;
+}
+.three {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-image: url('/3.png');
+    background-size: cover;
+    background-position: 0px -42px;
+}
+.four {
+    background-image: url('/image.png');
+    background-size: cover;
+    background-position: -124px;
+}
+.five {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-image: url('/4.png');
+    background-size: cover;
+    background-position: -124px;
+}
+.six {
+    background-image: url('/7.jpg');
+    background-size: cover;
+}
+.seven {
+    background-image: url('/6.jpg');
+    background-size: cover;
+}
+.eight {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    background-image: url('/5.jpg');
+    background-size: cover;
+    background-position: 0px -107px;
+}
