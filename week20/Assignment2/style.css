@@ -1,0 +1,39 @@
+.arrow {
+    width: 700px;
+    background-color: #EEE;
+    margin: 40px auto;
+    padding: 20px;
+    position: relative;
+}
+.top::before {
+    content: '';
+    position: absolute;
+    border: 20px solid transparent;
+    border-bottom-color: #EEE;
+    top: -69%;
+    left: 50%;
+}
+.right::before {
+    content: '';
+    position: absolute;
+    border: 20px solid transparent;
+    border-left-color: #EEE;
+    top: 15%;
+    right: -40px;
+}
+.bottom::before {
+    content: '';
+    position: absolute;
+    border: 20px solid transparent;
+    border-top-color: #EEE;
+    bottom: -69%;
+    left: 50%;
+}
+.left::before {
+    content: '';
+    position: absolute;
+    border: 20px solid transparent;
+    border-right-color: #EEE;
+    top: 15%;
+    left: -40px;
+}
