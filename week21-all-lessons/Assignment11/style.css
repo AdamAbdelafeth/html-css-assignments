@@ -1,0 +1,51 @@
+body {
+    height: 100vh;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+table {
+    background-color: #EEE;
+    padding: 10px;
+    text-align: center;
+    border-spacing: 2px;
+    overflow: hidden;
+}
+th, 
+td {
+    padding: 20px;
+    border: 1px solid #CCC;
+    position: relative;
+}
+tr {
+    background-color: #FFF;
+}
+th {
+    background-color: #FFF;
+}
+td:hover {
+    border-color: #1565c0;
+    color: #1565c0;
+    
+}
+tr:hover{ 
+        background-color: #CCC;
+    
+}
+table:has(td:nth-child(1):hover){
+    & tbody td:nth-child(1){
+        background-color: #CCC;
+    }
+}
+table:has(td:nth-child(2):hover){
+    & tbody td:nth-child(2){
+        background-color: #CCC;
+    }
+}
+table:has(td:nth-child(3):hover){
+    & tbody td:nth-child(3){
+        background-color: #CCC;
+    }
+}
