@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-box {
+    background: #006d77;
+    border-radius: 5px;
+    border: 2px solid #EEE;
+}
+.prefix {
+    color: #FFF;
+    padding: 10px;
+    font-weight: bold;
+    
+}
+input {
+    padding: 10px;
+    border: none;
+    caret-color: #006d77;
+}
+input:focus {
+    outline: none;
+}
