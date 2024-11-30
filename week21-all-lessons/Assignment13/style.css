@@ -15,17 +15,16 @@ body {
     display: grid;
     grid-template-columns: repeat(3, auto);
     border-radius: 10px;
-    
 }
 .main div {
     padding: 20px;
     background-color: #FFF;
     margin: 20px;
-    
     border-radius: 20px;
     width: 230px;
     color: #333;
     position: relative;
+    box-shadow: 5px 5px 15px #1e88e5;
 }
 h3,p {
     display: block;
