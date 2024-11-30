@@ -1,6 +1,6 @@
 * {
-    box-sizing: border-box;
     margin: 0;
+    box-sizing: border-box;
 }
 body {
     display: flex;
@@ -9,15 +9,12 @@ body {
     height: 100vh;
 }
 .container {
-    width: 400px;
-    height: 400px;
+    width: 600px;
+    height: 600px;
+    outline: 5px solid #333;
     display: grid;
     grid-template-columns: repeat(8, auto);
     grid-template-rows: repeat(8, auto);
-    outline: 5px solid #333;
-}
-.white {
-    background-color: #FFF;
 }
 .black {
     background-color: #333;
