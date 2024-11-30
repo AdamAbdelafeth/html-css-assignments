@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: cursive;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    background-color: #EEE;
+    padding: 60px 20px;
+    gap: 20px;
+}
+.main div {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #FFF;
+}
+h4 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.price {
+    font-size: 30px;
+    color: #1565c0;
+    position: relative;
+}
+.price::before {
+    content: '$';
+    position: absolute;
+    left: -13px;
+    top: 0px;
+    font-size: 20px;
+}
+.price::after {
+    content: '/Mo';
+    position: absolute;
+    left: 32px;
+    top: 25px;
+    font-size: 10px;
+    opacity: 0.7;
+}
+p {
+    margin: 20px;
+    opacity: .5;
+}
+p span {
+    font-weight: bold;
+}
+button {
+    background-color: #1565c0;
+    color: #FFF;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 15px 50px;
+    font-size: 20px;
+}
+.two {
+    position: relative;
+}
+.two::before {
+    content: 'Most Popular';
+    position: absolute;
+    background-color: #1565c0;
+    width: 80%;
+    color: #FFF;
+    top: -3%;
+    left: 10%;
+}
