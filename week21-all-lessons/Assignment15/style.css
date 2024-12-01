@@ -1,0 +1,17 @@
+* {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    text-shadow: 0 0 3px #8338ec;
+    
+    -webkit-text-fill-color: transparent;
+    
+}
